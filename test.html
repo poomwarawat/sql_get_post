@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .boxline{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .boxline > .line{
+        width: 400px;
+        height: 2px;
+        background-color: red;
+        border: 2px solid red;
+        margin-top: 25px;
+    }
+    .boxline > .text{
+        width: 200px;
+        background-color: aqua;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="boxline">
+            <div class="line"></div>
+            <div class="text">
+                <p>รีวิวล่าสุด</p>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

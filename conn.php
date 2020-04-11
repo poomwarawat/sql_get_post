@@ -1,5 +1,4 @@
 <?php
-
     //สร้างการเชื่อมต่อกับฐานข้อมูล
     $servername = "localhost";
     $username = "poom";

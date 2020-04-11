@@ -33,8 +33,18 @@
 
         if($result_check > 0){
             while($row = mysqli_fetch_assoc($result)){
+                $id = $row['id'];
                 //แสดงข้อมูลออกมาเป็น แท็ก p โดยข้อมูลที่แสดงคือ row ที่มีชื่อว่า data
-                echo "<p class='comment-box' >name :" . $row["data"] . "</p>";
+                //"<form " . "action='/getProduct.php?id='" . "'" . $row['id'] . "'" . "method='POST' >";
+                echo "<form class='comment-box' action='/getsql/getProduct.php?id=$id' method='POST'>";
+                    echo "<p>";
+                        echo $row['data'];
+                    echo "</p>";
+                    echo "<button type='submit' " . "id='" . $row['id'] . "'" . ">"; 
+                        echo "id= " . $row['id'];
+                    echo "</button>";
+                echo "</form>";
+                // echo "<p class='comment-box' id=".$row['id']."  >  name :" . $row["data"] . "</p>";
             }
         }else{
             echo "Error";
